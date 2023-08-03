@@ -1,46 +1,46 @@
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/raleway-v28-latin-700.woff2') format('woff2'), 
-       url('../fonts/raleway-v28-latin-700.woff') format('woff'); 
+  src: url('../fonts/raleway-v28-latin-700.woff2') format('woff2'),
+    url('../fonts/raleway-v28-latin-700.woff') format('woff');
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), 
-       url('../fonts/roboto-v30-latin-regular.woff') format('woff'); 
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+    url('../fonts/roboto-v30-latin-regular.woff') format('woff');
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2'), 
-       url('../fonts/roboto-v30-latin-500.woff') format('woff'); 
+  src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2'),
+    url('../fonts/roboto-v30-latin-500.woff') format('woff');
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'), 
-       url('../fonts/roboto-v30-latin-700.woff') format('woff'); 
+  src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'),
+    url('../fonts/roboto-v30-latin-700.woff') format('woff');
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
-  src: url('../fonts/roboto-v30-latin-900.woff2') format('woff2'), 
-       url('../fonts/roboto-v30-latin-900.woff') format('woff'); 
+  src: url('../fonts/roboto-v30-latin-900.woff2') format('woff2'),
+    url('../fonts/roboto-v30-latin-900.woff') format('woff');
 }
 
 :root {
@@ -59,7 +59,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   color: var(--secondory-font-color);
-  background-color: var(--primary-white-color);  
+  background-color: var(--primary-white-color);
 }
 
 .header {
@@ -87,7 +87,7 @@ body {
 
 .main-nav {
   padding-left: 93px;
-  list-style: none; 
+  list-style: none;
 }
 
 .main-nav li {
@@ -98,7 +98,7 @@ body {
   display: flex;
   list-style: none;
   padding-right: 215px;
-  
+
 }
 
 .contact-info li {
@@ -115,7 +115,7 @@ body {
 }
 
 .logo-header-span {
-  color: var( --secondory-font-color);
+  color: var(--secondory-font-color);
 }
 
 .link {
@@ -132,15 +132,16 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var( --main-font-color)
+  color: var(--main-font-color)
 }
 
 a {
   text-decoration: none;
-  color: var( --secondory-font-color)
+  color: var(--secondory-font-color)
 }
 
-a:hover, :focus {
+a:hover,
+:focus {
   color: var(--secondary-accent-color);
 }
 
@@ -149,7 +150,7 @@ a:visited {
 }
 
 ul {
-  list-style: none; 
+  list-style: none;
 }
 
 li {
@@ -163,6 +164,7 @@ p {
   color: var(--main-font-color)
 }
 
+
 .name {
   font-weight: 500;
   font-size: 16px;
@@ -171,16 +173,16 @@ p {
   color: var(--secondory-font-color)
 }
 
-.profession{
+.profession {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(var(--main-font-color))
+  color: var(--main-font-color)
 }
 
 .hero {
-  background: #2F303A;
-  position: absolute;
+  /* background: #2F303A; */
+  position: relative;
   top: 80px;
   width: 1600px;
   height: 600px;
@@ -190,17 +192,29 @@ p {
   align-items: center;
 }
 
-.hero-title {
+.hero-content {
+  position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-personal {
+  display: block;
+  width: auto;
+  height: 100%;
+
+}
+
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center; 
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--main-light-color)
-  
+  color: var(--secondory-font-color);
 }
 
 .features {
@@ -352,11 +366,12 @@ h3 {
   color: var(--main-light-color);
 }
 
-.my-button:hover, :focus {
-  background: var( --secondary-accent-color);
+.my-button:hover,
+:focus {
+  background: var(--secondary-accent-color);
 }
 
-.button-group{
+.button-group {
   font-family: inherit;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -371,14 +386,16 @@ h3 {
   letter-spacing: 0.03em;
 }
 
-.button-group:hover, :focus {
+.button-group:hover,
+:focus {
   background: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  ;
   color: var(--main-light-color);
 }
 
 .footer {
-  background: var( --border-bg-color);
+  background: var(--border-bg-color);
   position: absolute;
   width: 1600px;
   height: 252px;
@@ -404,7 +421,7 @@ h3 {
 }
 
 .logo-footer-span {
-  color: var(--main-light-color) ;
+  color: var(--main-light-color);
 }
 
 .maps {
@@ -414,7 +431,7 @@ h3 {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var( --main-light-color);
+  color: var(--main-light-color);
 }
 
 .mob {
@@ -424,7 +441,7 @@ h3 {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color:  var(--logo-footer-mob);
+  color: var(--logo-footer-mob);
 }
 
 .gallery {
@@ -439,8 +456,9 @@ h3 {
   display: flex;
   justify-content: center;
   padding: 0;
-  margin-top: 0; 
+  margin-top: 0;
 }
+
 .filters li {
   margin: 0 4px;
 }
@@ -448,8 +466,10 @@ h3 {
 .project {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px; /* відстань між рядками*/
-  grid-column-gap: 30px; /*відстань між стовпчиками */
+  grid-gap: 30px;
+  /* відстань між рядками*/
+  grid-column-gap: 30px;
+  /*відстань між стовпчиками */
   list-style: none;
   margin-top: 50px;
   padding: 0;
@@ -457,7 +477,7 @@ h3 {
 
 .box {
   background: var(--main-light-color);
-  border: 1px solid var( --main-light-color);
+  border: 1px solid var(--main-light-color);
   width: 370px;
 }
 
@@ -492,13 +512,13 @@ h3 {
 
 .visually-hidden {
   position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
